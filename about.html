@@ -1,0 +1,1020 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shinghar | Beauty & Style</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: "#FAF7F1",
+              gold: "#C99A52",
+              dark: "#1D1B19",
+            },
+
+            fontFamily: {
+              heading: ["Playfair Display", "serif"],
+              body: ["Montserrat", "sans-serif"],
+              script: ["Cormorant Garamond", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-cream text-dark font-body">
+    <!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+    <header
+      class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200"
+    >
+      <nav
+        class="max-w-[1400px] mx-auto px-5 lg:px-10 h-[75px] flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3">
+          <div
+            class="w-[135px] h-[75px] bg-[#D6AA6B] flex items-center justify-center"
+          >
+            <div class="text-center">
+              <div class="font-heading text-[25px] font-semibold">
+                ♧ Shinghar
+              </div>
+
+              <p class="text-[8px] tracking-[4px]">BEAUTY & STYLE</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden lg:flex items-center gap-9 text-[13px]">
+          <li>
+            <a href="#home" class="text-gold border-b-2 border-gold pb-2">
+              HOME
+            </a>
+          </li>
+
+          <li>
+            <a href="#about" class="hover:text-gold transition"> ABOUT </a>
+          </li>
+
+          <li>
+            <a href="#services" class="hover:text-gold transition">
+              SERVICES
+            </a>
+          </li>
+
+          <li>
+            <a href="#pricing" class="hover:text-gold transition"> PRICING </a>
+          </li>
+
+          <li>
+            <a href="#gallery" class="hover:text-gold transition"> GALLERY </a>
+          </li>
+
+          <li>
+            <a href="#team" class="hover:text-gold transition"> TEAM </a>
+          </li>
+
+          <li>
+            <a href="#contact" class="hover:text-gold transition"> CONTACT </a>
+          </li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="hidden md:flex items-center gap-3">
+          <a
+            href="#"
+            class="w-9 h-9 border border-gold flex items-center justify-center text-sm hover:bg-gold hover:text-white transition"
+          >
+            f
+          </a>
+
+          <a
+            href="#"
+            class="w-9 h-9 border border-gold flex items-center justify-center text-sm hover:bg-gold hover:text-white transition"
+          >
+            ◎
+          </a>
+
+          <a
+            href="#"
+            class="w-9 h-9 border border-gold flex items-center justify-center text-sm hover:bg-gold hover:text-white transition"
+          >
+            ◉
+          </a>
+        </div>
+
+        <!-- Mobile Button -->
+        <button id="menuBtn" class="lg:hidden text-2xl">☰</button>
+      </nav>
+
+      <!-- Mobile Menu -->
+
+      <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+        <ul class="flex flex-col text-center">
+          <li>
+            <a href="#home" class="block py-4 hover:bg-cream"> HOME </a>
+          </li>
+
+          <li>
+            <a href="#about" class="block py-4 hover:bg-cream"> ABOUT </a>
+          </li>
+
+          <li>
+            <a href="#services" class="block py-4 hover:bg-cream"> SERVICES </a>
+          </li>
+
+          <li>
+            <a href="#pricing" class="block py-4 hover:bg-cream"> PRICING </a>
+          </li>
+
+          <li>
+            <a href="#gallery" class="block py-4 hover:bg-cream"> GALLERY </a>
+          </li>
+
+          <li>
+            <a href="#team" class="block py-4 hover:bg-cream"> TEAM </a>
+          </li>
+
+          <li>
+            <a href="#contact" class="block py-4 hover:bg-cream"> CONTACT </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- =====================================================
+     HERO
+===================================================== -->
+
+    <section id="home" class="min-h-[620px] grid lg:grid-cols-2">
+      <!-- Left Content -->
+
+      <div
+        class="relative flex items-center px-8 sm:px-12 lg:px-20 py-16 bg-[#FAF7F1]"
+      >
+        <div class="max-w-xl">
+          <p class="font-script text-gold text-3xl mb-1">Welcome to</p>
+
+          <h1
+            class="font-heading text-5xl sm:text-6xl lg:text-7xl leading-[0.95] font-semibold"
+          >
+            Shinghar
+            <br />
+
+            Beauty & Style
+          </h1>
+
+          <div class="w-10 h-[2px] bg-gold my-6"></div>
+
+          <p class="text-gray-600 text-sm sm:text-base leading-7 max-w-lg">
+            Enhance your natural beauty with our professional salon services.
+            Hair, makeup, skincare and more — because you deserve to look and
+            feel your best.
+          </p>
+
+          <!-- Buttons -->
+
+          <div class="flex flex-wrap gap-3 mt-7">
+            <a
+              href="#contact"
+              class="bg-gold text-white px-6 py-3 text-xs tracking-wide hover:bg-[#b48643] transition"
+            >
+              BOOK APPOINTMENT →
+            </a>
+
+            <a
+              href="#services"
+              class="border border-gray-400 px-6 py-3 text-xs hover:bg-dark hover:text-white transition"
+            >
+              EXPLORE SERVICES →
+            </a>
+          </div>
+
+          <!-- Contact -->
+
+          <div class="flex flex-wrap gap-10 mt-8">
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 bg-gold/20 flex items-center justify-center"
+              >
+                ☎
+              </div>
+
+              <div>
+                <p class="font-script text-gold text-lg">Call Us</p>
+
+                <p class="text-xs">+91 98765 43210</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div
+                class="w-10 h-10 bg-gold/20 flex items-center justify-center"
+              >
+                ✉
+              </div>
+
+              <div>
+                <p class="font-script text-gold text-lg">Mail Us</p>
+
+                <p class="text-xs">info@shinghar.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+
+      <div class="min-h-[450px] lg:min-h-full">
+        <img
+          src="images/hero-img1.jpg"
+          alt="Shinghar Beauty Salon"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </section>
+
+    <!-- =====================================================
+     ABOUT
+===================================================== -->
+
+    <section id="about" class="max-w-[1400px] mx-auto px-6 lg:px-10 py-20">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Image -->
+
+        <div class="h-[350px] sm:h-[450px]">
+          <img
+            src="images/clinik image.png"
+            alt="Shinghar Salon Interior"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Content -->
+
+        <div>
+          <p class="font-script text-gold text-3xl">About Us</p>
+
+          <h2 class="font-heading text-4xl sm:text-5xl font-semibold mt-1">
+            Why Choose Shinghar?
+          </h2>
+
+          <div class="w-10 h-[2px] bg-gold my-5"></div>
+
+          <p class="text-gray-600 text-sm leading-7">
+            Shinghar Beauty & Style offers professional hair, makeup, skincare,
+            and beauty services in a comfortable and welcoming space. We focus
+            on personalized care, quality service, and styles that match your
+            personality.
+          </p>
+
+          <!-- Stats -->
+
+          <div class="grid grid-cols-2 gap-5 mt-8">
+            <div class="bg-white p-7 text-center">
+              <div class="text-4xl text-gold">♜</div>
+
+              <h3 class="font-heading text-3xl mt-2">10+</h3>
+
+              <p class="text-xs tracking-wider mt-1">YEARS EXPERIENCE</p>
+            </div>
+
+            <div class="bg-white p-7 text-center">
+              <div class="text-4xl text-gold">♡</div>
+
+              <h3 class="font-heading text-3xl mt-2">5000+</h3>
+
+              <p class="text-xs tracking-wider mt-1">HAPPY CLIENTS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     SERVICES
+===================================================== -->
+
+    <section id="services" class="py-20 bg-white">
+      <div class="max-w-[1300px] mx-auto px-6">
+        <div class="text-center mb-12">
+          <p class="font-script text-gold text-3xl">Our Services</p>
+
+          <h2 class="font-heading text-4xl font-semibold">
+            Explore Our Services
+          </h2>
+
+          <div class="w-10 h-[2px] bg-gold mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Service 1 -->
+
+          <div
+            class="border border-gray-200 bg-cream p-5 text-center hover:-translate-y-1 transition"
+          >
+            <img
+              src="images/hair cutting and styling.webp"
+              class="w-28 h-28 mx-auto rounded-full object-cover"
+            />
+
+            <h3 class="font-heading text-xl mt-4">Haircut & Styling</h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+              Trendy haircuts, blow-dry and styling for every occasion.
+            </p>
+
+            <a
+              href="#"
+              class="inline-block border border-gold text-xs px-5 py-2 mt-4 hover:bg-gold hover:text-white transition"
+            >
+              READ MORE →
+            </a>
+          </div>
+
+          <!-- Service 2 -->
+
+          <div
+            class="border border-gray-200 bg-cream p-5 text-center hover:-translate-y-1 transition"
+          >
+            <img
+              src="images/hair cutting and styling.webp"
+              class="w-28 h-28 mx-auto rounded-full object-cover"
+            />
+
+            <h3 class="font-heading text-xl mt-4">Hair Coloring</h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+              Global, highlights, balayage and custom hair color.
+            </p>
+
+            <a
+              href="#"
+              class="inline-block border border-gold text-xs px-5 py-2 mt-4 hover:bg-gold hover:text-white transition"
+            >
+              READ MORE →
+            </a>
+          </div>
+
+          <!-- Service 3 -->
+
+          <div
+            class="border border-gray-200 bg-cream p-5 text-center hover:-translate-y-1 transition"
+          >
+            <img
+              src="images/hair cutting and styling.webp"
+              class="w-28 h-28 mx-auto rounded-full object-cover"
+            />
+
+            <h3 class="font-heading text-xl mt-4">Makeup</h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+              Bridal, party and everyday makeup for a flawless look.
+            </p>
+
+            <a
+              href="#"
+              class="inline-block border border-gold text-xs px-5 py-2 mt-4 hover:bg-gold hover:text-white transition"
+            >
+              READ MORE →
+            </a>
+          </div>
+
+          <!-- Service 4 -->
+
+          <div
+            class="border border-gray-200 bg-cream p-5 text-center hover:-translate-y-1 transition"
+          >
+            <img
+              src="images/hair cutting and styling.webp"
+              class="w-28 h-28 mx-auto rounded-full object-cover"
+            />
+
+            <h3 class="font-heading text-xl mt-4">Manicure & Pedicure</h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+              Nail care, nail art and relaxing manicure & pedicure.
+            </p>
+
+            <a
+              href="#"
+              class="inline-block border border-gold text-xs px-5 py-2 mt-4 hover:bg-gold hover:text-white transition"
+            >
+              READ MORE →
+            </a>
+          </div>
+
+          <!-- Service 5 -->
+
+          <div
+            class="border border-gray-200 bg-cream p-5 text-center hover:-translate-y-1 transition"
+          >
+            <img
+              src="images/hair cutting and styling.webp"
+              class="w-28 h-28 mx-auto rounded-full object-cover"
+            />
+
+            <h3 class="font-heading text-xl mt-4">Facial & Skin Care</h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+              Rejuvenating facials and advanced skincare treatments.
+            </p>
+
+            <a
+              href="#"
+              class="inline-block border border-gold text-xs px-5 py-2 mt-4 hover:bg-gold hover:text-white transition"
+            >
+              READ MORE →
+            </a>
+          </div>
+
+          <!-- Service 6 -->
+
+          <div
+            class="border border-gray-200 bg-cream p-5 text-center hover:-translate-y-1 transition"
+          >
+            <img
+              src="images/hair cutting and styling.webp"
+              class="w-28 h-28 mx-auto rounded-full object-cover"
+            />
+
+            <h3 class="font-heading text-xl mt-4">Spa & Massage</h3>
+
+            <p class="text-xs text-gray-500 mt-2">
+              Relax your mind and body with our spa therapies.
+            </p>
+
+            <a
+              href="#"
+              class="inline-block border border-gold text-xs px-5 py-2 mt-4 hover:bg-gold hover:text-white transition"
+            >
+              READ MORE →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     SPECIAL OFFER
+===================================================== -->
+
+    <section id="pricing" class="grid lg:grid-cols-2">
+      <!-- Offer -->
+
+      <div class="bg-[#C99A52] text-white px-8 sm:px-14 py-14">
+        <p class="font-script text-3xl">Special Offer</p>
+
+        <h2 class="font-heading text-4xl font-semibold mt-2">
+          Beauty Packages
+          <br />
+          at Shinghar
+        </h2>
+
+        <div class="flex flex-wrap gap-8 mt-7">
+          <div class="bg-[#222] px-8 py-5 text-center">
+            <p class="text-xs">FLAT</p>
+
+            <p class="text-4xl">20% OFF</p>
+
+            <p class="text-xs">ON FIRST VISIT</p>
+          </div>
+
+          <div class="max-w-xs">
+            <p class="text-sm leading-6">
+              Experience premium beauty services at the best prices. Book now
+              and get 20% off on your first visit.
+            </p>
+
+            <button class="border border-white px-5 py-2 mt-4 text-xs">
+              BOOK NOW →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Price List -->
+
+      <div class="bg-[#222] text-white p-6 sm:p-10">
+        <div class="space-y-2">
+          <div class="flex items-center justify-between bg-[#292929] p-2">
+            <div class="flex items-center gap-3">
+              <img src="images/haircut.jpg" class="w-12 h-12 object-cover" />
+
+              <div>
+                <p class="text-sm">Haircut & Styling</p>
+                <p class="text-xs text-gray-400">From ₹699</p>
+              </div>
+            </div>
+
+            <span class="text-gold">›</span>
+          </div>
+
+          <div class="flex items-center justify-between bg-[#292929] p-2">
+            <div class="flex items-center gap-3">
+              <img src="images/coloring.jpg" class="w-12 h-12 object-cover" />
+
+              <div>
+                <p class="text-sm">Global Hair Coloring</p>
+                <p class="text-xs text-gray-400">From ₹2,499</p>
+              </div>
+            </div>
+
+            <span class="text-gold">›</span>
+          </div>
+
+          <div class="flex items-center justify-between bg-[#292929] p-2">
+            <div class="flex items-center gap-3">
+              <img src="images/makeup.jpg" class="w-12 h-12 object-cover" />
+
+              <div>
+                <p class="text-sm">Bridal Makeup</p>
+                <p class="text-xs text-gray-400">From ₹4,999</p>
+              </div>
+            </div>
+
+            <span class="text-gold">›</span>
+          </div>
+
+          <div class="flex items-center justify-between bg-[#292929] p-2">
+            <div class="flex items-center gap-3">
+              <img src="images/facial.jpg" class="w-12 h-12 object-cover" />
+
+              <div>
+                <p class="text-sm">Facial Treatment</p>
+                <p class="text-xs text-gray-400">From ₹1,299</p>
+              </div>
+            </div>
+
+            <span class="text-gold">›</span>
+          </div>
+
+          <div class="flex items-center justify-between bg-[#292929] p-2">
+            <div class="flex items-center gap-3">
+              <img src="images/spa.jpg" class="w-12 h-12 object-cover" />
+
+              <div>
+                <p class="text-sm">Spa & Body Massage</p>
+                <p class="text-xs text-gray-400">From ₹1,499</p>
+              </div>
+            </div>
+
+            <span class="text-gold">›</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     GALLERY
+===================================================== -->
+
+    <section id="gallery" class="py-20 max-w-[1300px] mx-auto px-6">
+      <div class="text-center mb-10">
+        <p class="font-script text-gold text-3xl">Gallery</p>
+
+        <h2 class="font-heading text-4xl font-semibold">Explore Our Gallery</h2>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 h-[600px]">
+        <img
+          src="images/gallery1.jpg"
+          class="w-full h-full object-cover rounded"
+        />
+
+        <img
+          src="images/gallery2.jpg"
+          class="w-full h-full object-cover rounded"
+        />
+
+        <div class="grid grid-rows-2 gap-3">
+          <img
+            src="images/gallery3.jpg"
+            class="w-full h-full object-cover rounded"
+          />
+
+          <img
+            src="images/gallery4.jpg"
+            class="w-full h-full object-cover rounded"
+          />
+        </div>
+
+        <div class="grid grid-rows-2 gap-3">
+          <img
+            src="images/gallery5.jpg"
+            class="w-full h-full object-cover rounded"
+          />
+
+          <img
+            src="images/salon.jpg"
+            class="w-full h-full object-cover rounded"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     TEAM
+===================================================== -->
+
+    <section id="team" class="py-20 bg-white">
+      <div class="max-w-[1300px] mx-auto px-6">
+        <div class="text-center mb-10">
+          <p class="font-script text-gold text-3xl">Team Members</p>
+
+          <h2 class="font-heading text-4xl font-semibold">
+            Our Experienced Specialists
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- Member -->
+
+          <div class="bg-cream text-center">
+            <img
+              src="images/team1.jpg"
+              class="w-full aspect-square object-cover"
+            />
+
+            <div class="p-4">
+              <h3 class="font-heading text-xl">Priya Sharma</h3>
+
+              <p class="text-xs text-gray-500">Hair Stylist</p>
+
+              <div class="flex justify-center gap-2 mt-3">
+                <span
+                  class="border border-gold w-6 h-6 text-xs flex items-center justify-center"
+                >
+                  f
+                </span>
+
+                <span
+                  class="border border-gold w-6 h-6 text-xs flex items-center justify-center"
+                >
+                  ◎
+                </span>
+
+                <span
+                  class="border border-gold w-6 h-6 text-xs flex items-center justify-center"
+                >
+                  in
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-cream text-center">
+            <img
+              src="images/team2.jpg"
+              class="w-full aspect-square object-cover"
+            />
+
+            <div class="p-4">
+              <h3 class="font-heading text-xl">Neha Gupta</h3>
+
+              <p class="text-xs text-gray-500">Makeup Artist</p>
+
+              <div class="flex justify-center gap-2 mt-3">
+                <span
+                  class="border border-gold w-6 h-6 text-xs flex items-center justify-center"
+                >
+                  f
+                </span>
+
+                <span
+                  class="border border-gold w-6 h-6 text-xs flex items-center justify-center"
+                >
+                  ◎
+                </span>
+
+                <span
+                  class="border border-gold w-6 h-6 text-xs flex items-center justify-center"
+                >
+                  in
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-cream text-center">
+            <img
+              src="images/team3.jpg"
+              class="w-full aspect-square object-cover"
+            />
+
+            <div class="p-4">
+              <h3 class="font-heading text-xl">Ritika Mehta</h3>
+
+              <p class="text-xs text-gray-500">Skin Care Specialist</p>
+
+              <div class="flex justify-center gap-2 mt-3">
+                <span
+                  class="border border-gold w-6 h-6 text-xs flex items-center justify-center"
+                >
+                  f
+                </span>
+
+                <span
+                  class="border border-gold w-6 h-6 text-xs flex items-center justify-center"
+                >
+                  ◎
+                </span>
+
+                <span
+                  class="border border-gold w-6 h-6 text-xs flex items-center justify-center"
+                >
+                  in
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-cream text-center">
+            <img
+              src="images/team4.jpg"
+              class="w-full aspect-square object-cover"
+            />
+
+            <div class="p-4">
+              <h3 class="font-heading text-xl">Kavya Singh</h3>
+
+              <p class="text-xs text-gray-500">Nail & Spa Expert</p>
+
+              <div class="flex justify-center gap-2 mt-3">
+                <span
+                  class="border border-gold w-6 h-6 text-xs flex items-center justify-center"
+                >
+                  f
+                </span>
+
+                <span
+                  class="border border-gold w-6 h-6 text-xs flex items-center justify-center"
+                >
+                  ◎
+                </span>
+
+                <span
+                  class="border border-gold w-6 h-6 text-xs flex items-center justify-center"
+                >
+                  in
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     TESTIMONIALS
+===================================================== -->
+
+    <section class="py-20">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="text-center mb-10">
+          <p class="font-script text-gold text-3xl">Testimonial</p>
+
+          <h2 class="font-heading text-4xl font-semibold">What Clients Say!</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-5">
+          <div class="bg-white p-7">
+            <div class="text-gold text-4xl">“</div>
+
+            <p class="text-sm text-gray-600 leading-6">
+              Amazing experience at Shinghar! The staff is so professional and
+              friendly. Loved my new haircut.
+            </p>
+
+            <div class="mt-5">
+              <h4 class="font-semibold text-sm">Anjali Verma</h4>
+
+              <p class="text-xs text-gray-400">Jaipur</p>
+            </div>
+          </div>
+
+          <div class="bg-gold p-7">
+            <div class="text-white text-4xl">“</div>
+
+            <p class="text-sm text-white leading-6">
+              Best salon in the city! Their makeup and skincare services are
+              just outstanding.
+            </p>
+
+            <div class="mt-5">
+              <h4 class="font-semibold text-sm">Riya Malhotra</h4>
+
+              <p class="text-xs text-white/70">Jaipur</p>
+            </div>
+          </div>
+
+          <div class="bg-white p-7">
+            <div class="text-gold text-4xl">“</div>
+
+            <p class="text-sm text-gray-600 leading-6">
+              Very relaxing environment and excellent service. Highly
+              recommended!
+            </p>
+
+            <div class="mt-5">
+              <h4 class="font-semibold text-sm">Sneha Kapoor</h4>
+
+              <p class="text-xs text-gray-400">Jaipur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     BLOG
+===================================================== -->
+
+    <section class="py-16 bg-white">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="text-center mb-10">
+          <p class="font-script text-gold text-3xl">Latest Updates</p>
+
+          <h2 class="font-heading text-4xl font-semibold">Our Beauty Blog</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <article class="flex gap-4">
+            <img src="images/blog1.jpg" class="w-40 h-28 object-cover" />
+
+            <div>
+              <h3 class="font-heading text-xl">
+                Hair Care Tips for Healthy and Shiny Hair
+              </h3>
+
+              <p class="text-xs text-gray-400 mt-2">Jan 15, 2025</p>
+
+              <a
+                href="#"
+                class="inline-block border border-gold text-xs px-4 py-2 mt-3"
+              >
+                READ MORE →
+              </a>
+            </div>
+          </article>
+
+          <article class="flex gap-4">
+            <img src="images/blog2.jpg" class="w-40 h-28 object-cover" />
+
+            <div>
+              <h3 class="font-heading text-xl">
+                Top 5 Facial Treatments for Glowing Skin
+              </h3>
+
+              <p class="text-xs text-gray-400 mt-2">Jan 10, 2025</p>
+
+              <a
+                href="#"
+                class="inline-block border border-gold text-xs px-4 py-2 mt-3"
+              >
+                READ MORE →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+
+    <footer id="contact" class="bg-[#222] text-white">
+      <div class="max-w-[1300px] mx-auto px-6 py-14">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          <!-- Brand -->
+
+          <div>
+            <h2 class="font-heading text-3xl text-gold">♧ Shinghar</h2>
+
+            <p class="text-xs text-gray-400 leading-6 mt-4">
+              Your beauty, our passion. At Shinghar, we create confidence
+              through expert care and premium salon services.
+            </p>
+
+            <div class="flex gap-2 mt-5">
+              <span
+                class="w-8 h-8 border border-gold flex items-center justify-center"
+              >
+                f
+              </span>
+
+              <span
+                class="w-8 h-8 border border-gold flex items-center justify-center"
+              >
+                ◎
+              </span>
+
+              <span
+                class="w-8 h-8 border border-gold flex items-center justify-center"
+              >
+                ◉
+              </span>
+            </div>
+          </div>
+
+          <!-- Contact -->
+
+          <div>
+            <h3 class="font-heading text-xl text-gold">Contact Info</h3>
+
+            <div class="text-xs text-gray-400 leading-7 mt-4">
+              <p>📍 123 Tonk Road, Jaipur</p>
+              <p>📞 +91 98765 43210</p>
+              <p>✉ info@shinghar.in</p>
+              <p>🕐 Mon - Sun: 9:00 AM - 9:00 PM</p>
+            </div>
+          </div>
+
+          <!-- Links -->
+
+          <div>
+            <h3 class="font-heading text-xl text-gold">Quick Links</h3>
+
+            <ul class="text-xs text-gray-400 leading-7 mt-4">
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Services</li>
+              <li>Pricing</li>
+              <li>Gallery</li>
+              <li>Team</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+
+          <div>
+            <h3 class="font-heading text-xl text-gold">Newsletter</h3>
+
+            <p class="text-xs text-gray-400 mt-4 leading-6">
+              Subscribe to get beauty tips, offers and latest updates.
+            </p>
+
+            <div class="flex mt-5">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full px-3 py-3 text-xs text-black outline-none"
+              />
+
+              <button class="bg-gold px-4">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+
+      <div class="border-t border-gray-700">
+        <div
+          class="max-w-[1300px] mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between gap-2 text-[10px] text-gray-500"
+        >
+          <p>© 2025 Shinghar. All Rights Reserved.</p>
+
+          <p>Designed with ♥ for beautiful you.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+     MOBILE MENU SCRIPT
+===================================================== -->
+
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
