@@ -15,7 +15,7 @@
     />
   </head>
   <body>
-    <header class="shadow-2xl bg-[rgba(248,247,244,0.5)]">
+    <header class="shadow-2xl bg-[rgba(248,247,244,0.5)] backdrop-blur-[10px] fixed top-0 left-0 w-full z-9">
       <div class="max-w-300 mx-auto flex justify-between items-center gap-9">
         <div class="w-40 md:w-50 lg:w-60 md:h-15 lg:h-20 shrink-0">
           <a href="index.html"
@@ -24,14 +24,16 @@
         </div>
         <nav class="grow hidden lg:block">
           <ul class="flex gap-9 justify-end">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="about.html">Service</a></li>
-            <li><a href="about.html">Team</a></li>
-            <li><a href="about.html">Contact</a></li>
+            <li><a href="index.html" class="font-['Playfair_Display'] text-(--primary-color)] font-medium text-[20px] transition duration-300 hover:text-(--secondary-color)">Home</a></li>
+            <li><a href="about.html" class="font-['Playfair_Display'] text-(--primary-color)] font-medium text-[20px] transition duration-300 hover:text-(--secondary-color)">About</a></li>
+            <li><a href="about.html" class="font-['Playfair_Display'] text-(--primary-color)] font-medium text-[20px] transition duration-300 hover:text-(--secondary-color)">Service</a></li>
+            <li><a href="about.html" class="font-['Playfair_Display'] text-(--primary-color)] font-medium text-[20px] transition duration-300 hover:text-(--secondary-color)">Team</a></li>
+            <li><a href="about.html" class="font-['Playfair_Display'] text-(--primary-color)] font-medium text-[20px] transition duration-300 hover:text-(--secondary-color)">Contact</a></li>
           </ul>
         </nav>
-        <div class="common-btn hidden lg:block w-35 sm:w-45">
+        <div
+          class="common-btn hidden lg:flex w-35 sm:w-45 bg-(--secondary-color) px-3.25 py-3.75 justify-center transition hover:-translate-y-1 hover:scale-105 hover:text-[1.03em] hover:bg-[burlywood] hover:shadow-[burlywood_0px_3px_8px] active:translate-y-0.5 active:scale-100 active:shadow-[burlywood 0px 1px 8px] rounded-lg text-[#381212] font-(family-name:--secondary-font-family) border-none outline-none font-bold"
+        >
           <button>Book Appointment</button>
         </div>
         <div
@@ -45,45 +47,63 @@
     <section class="hero bg-(--primary-background-color)">
       <div class="max-w-300 mx-auto flex-col lg:flex-row flex items-center">
         <div
-          class="hero-content text-left md:text-center lg:text-left w-full lg:w-[50%] flex flex-col px-3 md:px-0 lg:px-2.5"
+          class="hero-content text-left md:text-center lg:text-left w-full lg:w-[45%] flex flex-col px-3 md:px-0 lg:px-2.5"
         >
           <span
-            class="mt-20 text-[1.7em] md:text-[2.5em] font-(family-name:--primary-font-family)"
+            class="mt-20 text-[1.7em] md:text-[2.5em] font-(family-name:--primary-font-family) inline-block text-(--secondary-color)"
             >Welcome to</span
           >
           <h1
-            class="text-[2.5em] md:text-[3.5em] leading-1.3 font-(family-name:--secondary-font-family)"
+            class="text-[2.5em] md:text-[3.5em] leading-1.3 font-(family-name:--secondary-font-family) leading-[1.3] text-(--primary-color)"
           >
             Shinghar <br class="inline sm:hidden lg:inline" />Beauty & Style
           </h1>
           <div
             class="w-15 mx-0 md:mx-auto lg:mx-0 my-2.5 border-2 border-(--secondary-color) rounded-lg"
           ></div>
-          <p class="font-light text-[0.9em] sm:text-[1em]">
+          <p
+            class="font-light text-[0.9em] sm:text-[1em] pr-2.5 my-3.75 font-[Montserrat] text-(--primary-color)"
+          >
             Professional beauty care, tailored just for you. <br />
             Enhance your beauty with expert hair, makeup, and skincare services.
           </p>
           <div
             class="hero-btns w-fit text-left mx-0 md:mx-auto lg:mx-0 flex gap-2.5 sm:gap-5"
           >
-            <button class="common-btn w-35 sm:w-45">Book Appointment</button>
-            <button class="w-35 sm:w-45">
+            <button
+              class="w-35 sm:w-45 bg-(--secondary-color) px-3.5 py-4 justify-center transition hover:-translate-y-1 hover:scale-105 hover:text-[1.03em] hover:bg-[burlywood] hover:shadow-[burlywood_0px_3px_8px] active:translate-y-0.5 active:scale-100 active:shadow-[burlywood 0px 1px 8px] rounded-lg text-[#381212] font-(family-name:--secondary-font-family) border-none outline-none font-bold"
+            >
+              Book Appointment
+            </button>
+
+            <button
+              class="w-35 sm:w-45 px-3.75 py-3.25 flex justify-center items-stretch rounded-[7px] font-bold text-[#381212] font-['Playfair_Display'] outline-none border-2 border-dashed border-(--primary-color) hover:-translate-y-0.75 hover:cursor-pointer transition duration-300 animate-bounce"
+            >
               <a href="">Explore <br class="inline sm:hidden" />Service</a>
             </button>
           </div>
-          <div class="social-media-icons mt-7">
-            <a href="https://www.facebook.com">
-              <i class="fa-brands fa-facebook-f"></i>
+
+          <div class="social-media-icons mt-7 flex gap-5">
+            <a href="https://www.facebook.com" class="border-3 border-double border-white text-[25px] text-white bg-(--secondary-color) flex justify-center w-12.5 py-2.5 hover:scale-[1.05] hover:-translate-y-1 hover:shadow-[0px_3px_5px_var(--secondary-color)] transition duration-200 active:translate-y-0 active:shadow-none">
+              <i
+                class="fa-brands fa-facebook-f"
+              ></i>
             </a>
-            <a href="https://www.instagram.com">
-              <i class="fa-brands fa-instagram"></i>
+
+            <a href="https://www.instagram.com" class="border-3 border-double border-white text-[25px] text-white bg-(--secondary-color) flex justify-center w-12.5 py-2.5 hover:scale-[1.05] hover:-translate-y-1 hover:shadow-[0px_3px_5px_var(--secondary-color)] transition duration-200 active:translate-y-0 active:shadow-none">
+              <i
+                class="fa-brands fa-instagram"
+              ></i>
             </a>
-            <a href="https://www.whatsapp.com">
-              <i class="fa-brands fa-whatsapp"></i>
+
+            <a href="https://www.whatsapp.com" class="border-3 border-double border-white text-[25px] text-white bg-(--secondary-color) flex justify-center w-12.5 py-2.5 hover:scale-[1.05] hover:-translate-y-1 hover:shadow-[0px_3px_5px_var(--secondary-color)] transition duration-200 active:translate-y-0 active:shadow-none">
+              <i
+                class="fa-brands fa-whatsapp"
+              ></i>
             </a>
           </div>
         </div>
-        <div class="hero-image w-full lg:w-[60%] mt-10 lg:mt-0 h-auto lg:h-130">
+        <div class="hero-image w-full lg:w-[65%] mt-10 lg:mt-0 h-auto lg:h-130">
           <img
             src="images/hero-img1.jpg"
             alt="salon-img"
@@ -104,7 +124,7 @@
           <img
             src="images/clinik image.png"
             alt="clink image"
-            class="w-full lg:hover:rotate-z-2 transition"
+            class="w-full rounded-lg shadow-2xl"
           />
         </div>
         <div class="right w-full lg:w-[55%] order-1 lg:order-2 self-center">
@@ -208,7 +228,7 @@
           <p
             class="font-[Montserrat] text-[0.85em] text-(--primary-color) font-normal"
           >
-            Trendy haircuts, blow-dry and styling for every occasion.
+            Global, highlights, balayage and custom hair color.
           </p>
           <button
             class="border border-(--secondary-color) px-2 py-1.5 font-(family-name:--Cormorant-Garamond) text-[1.1em] hover:bg-(--secondary-color) hover:text-[white] transition font-medium"
@@ -228,7 +248,7 @@
           <p
             class="font-[Montserrat] text-[0.85em] text-(--primary-color) font-normal"
           >
-            Trendy haircuts, blow-dry and styling for every occasion.
+            Bridal, party and everyday makeup for a flawless look.
           </p>
           <button
             class="border border-(--secondary-color) px-2 py-1.5 font-(family-name:--Cormorant-Garamond) text-[1.1em] hover:bg-(--secondary-color) hover:text-[white] transition font-medium"
@@ -252,7 +272,7 @@
           <p
             class="font-[Montserrat] text-[0.85em] text-(--primary-color) font-normal"
           >
-            Trendy haircuts, blow-dry and styling for every occasion.
+            Nail care, nail art and relaxing manicure & pedicure.
           </p>
           <button
             class="border border-(--secondary-color) px-2 py-1.5 font-(family-name:--Cormorant-Garamond) text-[1.1em] hover:bg-(--secondary-color) hover:text-[white] transition font-medium"
@@ -276,7 +296,7 @@
           <p
             class="font-[Montserrat] text-[0.85em] text-(--primary-color) font-normal"
           >
-            Trendy haircuts, blow-dry and styling for every occasion.
+            Rejuvenating facials and advanced skincare treatments.
           </p>
           <button
             class="border border-(--secondary-color) px-2 py-1.5 font-(family-name:--Cormorant-Garamond) text-[1.1em] hover:bg-(--secondary-color) hover:text-[white] transition font-medium"
@@ -289,18 +309,18 @@
           class="flex flex-col gap-2.5 bg-(--primary-background-color) p-4 justify-center items-center text-center border border-[#E5E7EB] hover:-translate-y-1 transition"
         >
           <img
-            src="images/Spa & Massage.avif"
+            src="images/Bridal makeup2.jpg"
             alt=""
             class="w-25 h-25 rounded-full"
           />
           <span
             class="font-(family-name:--secondary-font-family) font-medium text-[1.3em]"
-            >Spa & Massage</span
+            >Bridal Beauty Packages</span
           >
           <p
             class="font-[Montserrat] text-[0.85em] text-(--primary-color) font-normal"
           >
-            Trendy haircuts, blow-dry and styling for every occasion.
+            Bridal makeup, hairstyling, and pre-wedding beauty services.
           </p>
           <button
             class="border border-(--secondary-color) px-2 py-1.5 font-(family-name:--Cormorant-Garamond) text-[1.1em] hover:bg-(--secondary-color) hover:text-[white] transition font-medium"
@@ -358,6 +378,7 @@
             class="price-cards p-2 flex h-15 gap-3 bg-(--primary-color) min-w-60 sm:min-w-80"
           >
             <img
+              class="hover:scale-130 transition"
               src="images/hair cutting and styling.webp"
               alt="haircut and styling"
             />
@@ -370,7 +391,11 @@
           <div
             class="price-cards p-2 flex h-15 gap-3 bg-(--primary-color) min-w-60 sm:min-w-80"
           >
-            <img src="images/hair colouring.avif" alt="haircut and styling" />
+            <img
+              class="hover:scale-130 transition"
+              src="images/hair colouring.avif"
+              alt="haircut and styling"
+            />
             <div class="price-info text-white flex flex-col font-[Montserrat]">
               <span>Global Hair Coloring</span>
               <span>from ₹2,499</span>
@@ -380,7 +405,11 @@
           <div
             class="price-cards p-2 flex h-15 gap-3 bg-(--primary-color) min-w-60 sm:min-w-80"
           >
-            <img src="images/bridal makeup.avif" alt="haircut and styling" />
+            <img
+              class="hover:scale-130 transition"
+              src="images/bridal makeup.avif"
+              alt="haircut and styling"
+            />
             <div class="price-info text-white flex flex-col font-[Montserrat]">
               <span>Bridal Makeup</span>
               <span>from ₹4,999</span>
@@ -391,6 +420,7 @@
             class="price-cards p-2 flex h-15 gap-3 bg-(--primary-color) min-w-60 sm:min-w-80"
           >
             <img
+              class="hover:scale-130 transition"
               src="images/Facial & Skin Care.avif"
               alt="haircut and styling"
             />
@@ -403,10 +433,14 @@
           <div
             class="price-cards p-2 flex h-15 gap-3 bg-(--primary-color) min-w-60 sm:min-w-80"
           >
-            <img src="images/Spa & Massage.avif" alt="haircut and styling" />
+            <img
+              class="hover:scale-130 transition"
+              src="images/EyeBrow2.webp"
+              alt="haircut and styling"
+            />
             <div class="price-info text-white flex flex-col font-[Montserrat]">
-              <span>Spa & Body Massage</span>
-              <span>from ₹1,499</span>
+              <span>Eyebrow & Threading</span>
+              <span>from ₹99</span>
             </div>
           </div>
         </div>
@@ -425,7 +459,9 @@
       >
         Explore Our Gallery
       </h2>
-
+      <div
+        class="w-15 mx-auto my-2.5 border-2 border-(--secondary-color) rounded-lg"
+      ></div>
       <div
         class="gallery-grid grid grid-cols-2 lg:grid-cols-4 gap-4 w-full my-10 h-125"
       >
@@ -490,87 +526,365 @@
       >
         Our Experienced Specialists
       </h2>
-      <div class="grid grid-cols-2 lg:grid-cols-4 w-full my-10 gap-5">  <!--grid-->
-        <div class="bg-(--primary-background-color) hover:shadow-2xl hover:scale-103 transition"> <!--card-->
+      <div
+        class="w-15 mx-auto my-2.5 border-2 border-(--secondary-color) rounded-lg"
+      ></div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 w-full my-10 gap-5">
+        <!--grid-->
+        <div
+          class="bg-(--primary-background-color) hover:shadow-2xl hover:scale-103 transition"
+        >
+          <!--card-->
           <div class="mb-5">
-            <img src="images/customer 1.png" alt="">
+            <img src="images/customer 1.png" alt="" />
           </div>
-          <span class="font-(family-name:--secondary-font-family) font-medium text-[1.3em]">Priya Sharma</span><br>
-          <span class="font-[Montserrat] text-[0.85em] font-normal text-(--primary-color)">Hair Specialist</span>
+          <span
+            class="font-(family-name:--secondary-font-family) font-medium text-[1.3em]"
+            >Priya Sharma</span
+          ><br />
+          <span
+            class="font-[Montserrat] text-[0.85em] font-normal text-(--primary-color)"
+            >Hair Specialist</span
+          >
           <div class="my-5">
-            <a href="https://facebook.com" class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://instagram.com" class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://whatsapp.com" class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a
+              href="https://facebook.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://instagram.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://whatsapp.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
           </div>
-        </div>        
-        <div class="bg-(--primary-background-color) hover:shadow-2xl hover:scale-103 transition"> <!--card-->
+        </div>
+        <div
+          class="bg-(--primary-background-color) hover:shadow-2xl hover:scale-103 transition"
+        >
+          <!--card-->
           <div class="mb-5">
-            <img src="images/customer 2.png" alt="">
+            <img src="images/customer 2.png" alt="" />
           </div>
-          <span class="font-(family-name:--secondary-font-family) font-medium text-[1.3em]">Neha Gupta</span><br>
-          <span class="font-[Montserrat] text-[0.85em] font-normal text-(--primary-color)">Makeup Artist</span>
+          <span
+            class="font-(family-name:--secondary-font-family) font-medium text-[1.3em]"
+            >Neha Gupta</span
+          ><br />
+          <span
+            class="font-[Montserrat] text-[0.85em] font-normal text-(--primary-color)"
+            >Makeup Artist</span
+          >
           <div class="my-5">
-            <a href="https://facebook.com" class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://instagram.com" class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://whatsapp.com" class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a
+              href="https://facebook.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://instagram.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://whatsapp.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
           </div>
-        </div>        
-        <div class="bg-(--primary-background-color) hover:shadow-2xl hover:scale-103 transition"> <!--card-->
+        </div>
+        <div
+          class="bg-(--primary-background-color) hover:shadow-2xl hover:scale-103 transition"
+        >
+          <!--card-->
           <div class="mb-5">
-            <img src="images/customer 3.png" alt="">
+            <img src="images/customer 3.png" alt="" />
           </div>
-          <span class="font-(family-name:--secondary-font-family) font-medium text-[1.3em]">Ritika Mehta</span><br>
-          <span class="font-[Montserrat] text-[0.85em] font-normal text-(--primary-color)">Skin Care Specialist</span>
+          <span
+            class="font-(family-name:--secondary-font-family) font-medium text-[1.3em]"
+            >Ritika Mehta</span
+          ><br />
+          <span
+            class="font-[Montserrat] text-[0.85em] font-normal text-(--primary-color)"
+            >Skin Care Specialist</span
+          >
           <div class="my-5">
-            <a href="https://facebook.com" class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://instagram.com" class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://whatsapp.com" class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a
+              href="https://facebook.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://instagram.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://whatsapp.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
           </div>
-        </div>        
-        <div class="bg-(--primary-background-color) hover:shadow-2xl hover:scale-105 transition"> <!--card-->
+        </div>
+        <div
+          class="bg-(--primary-background-color) hover:shadow-2xl hover:scale-105 transition"
+        >
+          <!--card-->
           <div class="mb-5">
-            <img src="images/customer 4.png" alt="">
+            <img src="images/customer 4.png" alt="" />
           </div>
-          <span class="font-(family-name:--secondary-font-family) font-medium text-[1.3em]">Kavya Singh</span><br>
-          <span class="font-[Montserrat] text-[0.85em] font-normal text-(--primary-color)">Nail & Spa Expert</span>
+          <span
+            class="font-(family-name:--secondary-font-family) font-medium text-[1.3em]"
+            >Kavya Singh</span
+          ><br />
+          <span
+            class="font-[Montserrat] text-[0.85em] font-normal text-(--primary-color)"
+            >Nail & Spa Expert</span
+          >
           <div class="my-5">
-            <a href="https://facebook.com" class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://instagram.com" class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://whatsapp.com" class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a
+              href="https://facebook.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://instagram.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://whatsapp.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
           </div>
-        </div>        
+        </div>
       </div>
     </section>
     <section class="bg-(--primary-background-color)">
       <div class="max-w-300 mx-auto px-5 lg:px-0 mt-30 text-center py-13">
-        <span class="text-[1.5em] md:text-[2em] font-(family-name:--primary-font-family) text-(--secondary-color)">Testimonial</span>
-        <h2 class="text-[2em] md:text-[2.5em] leading-1.3 font-(family-name:--secondary-font-family)">What Clients Say!</h2>
-
-
-        <div class="flex gap-5 text-left leading-7 mt-5 justify-center flex-wrap lg:flex-nowrap"> <!--flex-->
-          <div class="px-5 py-4 font-[Montserrat] bg-white ">
+        <span
+          class="text-[1.5em] md:text-[2em] font-(family-name:--primary-font-family) text-(--secondary-color)"
+          >Testimonial</span
+        >
+        <h2
+          class="text-[2em] md:text-[2.5em] leading-1.3 font-(family-name:--secondary-font-family)"
+        >
+          What Clients Say!
+        </h2>
+        <div
+          class="w-15 mx-auto my-2.5 border-2 border-(--secondary-color) rounded-lg"
+        ></div>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 gap-5 text-left leading-7 mt-5 justify-center"
+        >
+          <!--flex-->
+          <div class="px-5 py-4 font-[Montserrat] bg-white">
             <span class="text-(--secondary-color) text-4xl">“</span>
-            <p class="mb-3.5">Amazing experience at Shinghar! The staff is so professional and friendly. Loved my new haircut.</p>
-            <b>Anjali Verma</b><br>
+            <p class="mb-3.5">
+              Amazing experience at Shinghar! The staff is so professional and
+              friendly. Loved my new haircut.
+            </p>
+            <b>Anjali Verma</b><br />
             <span class="text-[0.9em]">Jaipur</span>
           </div>
-          <div class="px-5 py-4 font-[Montserrat] bg-(--secondary-color) text-white">
+          <div
+            class="px-5 py-4 font-[Montserrat] bg-(--secondary-color) text-white"
+          >
             <span class="text-white text-4xl">“</span>
-            <p class="mb-3.5">Amazing experience at Shinghar! The staff is so professional and friendly. Loved my new haircut.</p>
-            <b>Anjali Verma</b><br>
+            <p class="mb-3.5">
+              Best salon in the city! Their makeup and skincare services are
+              just outstanding.
+            </p>
+            <b>Riya Malhotra</b><br />
             <span class="text-[0.9em]">Jaipur</span>
           </div>
           <div class="px-5 py-4 font-[Montserrat] bg-white">
             <span class="text-(--secondary-color) text-4xl">“</span>
-            <p class="mb-3.5">Amazing experience at Shinghar! The staff is so professional and friendly. Loved my new haircut.</p>
-            <b>Anjali Verma</b><br>
+            <p class="mb-3.5">
+              Very relaxing environment and excellent service. Highly
+              recommended!
+            </p>
+            <b>Sneha Kapoor</b><br />
             <span class="text-[0.9em]">Jaipur</span>
           </div>
-
         </div>
-
       </div>
     </section>
-    
+
+    <section class="max-w-300 mx-auto my-10 px-5 lg:px-0 mt-20 text-center">
+      <span
+        class="text-[1.5em] md:text-[2em] font-(family-name:--primary-font-family) text-(--secondary-color)"
+        >Latest Updates</span
+      >
+      <h2
+        class="text-[2em] md:text-[2.5em] leading-1.3 font-(family-name:--secondary-font-family)"
+      >
+        Our Beauty Blog
+      </h2>
+      <div
+        class="w-15 mx-auto my-2.5 border-2 border-(--secondary-color) rounded-lg"
+      ></div>
+      <div
+        class="flex gap-6 text-left my-5 flex-col md:flex-row justify-between"
+      >
+        <div class="flex gap-5">
+          <div class="w-38 h-28 overflow-hidden shrink-0">
+            <img src="images/healthy and shiny hair'.avif" alt="" />
+          </div>
+          <div class="flex flex-col justify-between">
+            <p
+              class="font-(family-name:--secondary-font-family) font-medium text-[1.3em]"
+            >
+              Hair Care Tips for Healthy and Shiny Hair
+            </p>
+            <span class="text-[0.8em] text-gray-500">Jan 15, 2025</span>
+            <button
+              class="border border-(--secondary-color) px-2 py-1.5 font-(family-name:--Cormorant-Garamond) text-[1.1em] hover:bg-(--secondary-color) hover:text-[white] transition font-medium w-30"
+            >
+              Read more ⟶
+            </button>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <div class="w-38 h-28 overflow-hidden shrink-0">
+            <img
+              src="images/Facial & Skin Care.avif"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div class="flex flex-col justify-between">
+            <p
+              class="font-(family-name:--secondary-font-family) font-medium text-[1.3em]"
+            >
+              Hair Care Tips for Healthy and Shiny Hair
+            </p>
+            <span class="text-[0.8em] text-gray-500">Jan 15, 2025</span>
+            <button
+              class="border border-(--secondary-color) px-2 py-1.5 font-(family-name:--Cormorant-Garamond) text-[1.1em] hover:bg-(--secondary-color) hover:text-[white] transition font-medium w-30"
+            >
+              Read more ⟶
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#1E1C18] text-[#9CA3AF] w-full">
+      <div
+        class="max-w-300 mx-auto px-5 lg:px-0 mt-10 grid grid-cols-2 lg:grid-cols-4 text-left gap-5 py-10"
+      >
+        <div>
+          <!--Col1-->
+          <a href="index.html">
+            <img src="images/logo.png" alt="" class="w-50 mb-5" />
+          </a>
+          <p class="mb-5">
+            Your beauty, our passion. At Shinghar, we create confidence through
+            expert care and premium salon services.
+          </p>
+          <div class="my-5">
+            <a
+              href="https://facebook.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://instagram.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://whatsapp.com"
+              class="border border-(--secondary-color) p-2 hover:bg-(--secondary-color) hover:text-white transition"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2.5">
+          <!--Col2-->
+          <h2
+            class="font-(family-name:--secondary-font-family) font-medium text-[1.3em] text-(--secondary-color) mb-5"
+          >
+            Contact Info
+          </h2>
+          <span class="hover:text-(--secondary-color) transition"
+            ><i class="fa-solid fa-location-dot"></i> 123 Tonk Road,
+            Jaipur</span
+          >
+          <span class="hover:text-(--secondary-color) transition"
+            ><i class="fa-solid fa-phone"></i> +91 98765 43210</span
+          >
+          <span class="hover:text-(--secondary-color) transition"
+            ><i class="fa-regular fa-envelope"></i> info@shinghar.in</span
+          >
+          <span class="hover:text-(--secondary-color) transition"
+            ><i class="fa-solid fa-calendar-days"></i> Mon - Sun: 9:00 AM - 9:00
+            PM</span
+          >
+        </div>
+        <div class="flex flex-col gap-2.5">
+          <!--Col3-->
+          <h2
+            class="font-(family-name:--secondary-font-family) font-medium text-[1.3em] text-(--secondary-color) mb-5"
+          >
+            Ouick Links
+          </h2>
+          <a class="hover:text-(--secondary-color) transition" href="index.html"
+            >Home</a
+          >
+          <a class="hover:text-(--secondary-color) transition" href=""
+            >About Us</a
+          >
+          <a class="hover:text-(--secondary-color) transition" href=""
+            >Service</a
+          >
+          <a class="hover:text-(--secondary-color) transition" href="">Team</a>
+          <a class="hover:text-(--secondary-color) transition" href=""
+            >Contact</a
+          >
+        </div>
+        <div class="flex flex-col gap-2.5">
+          <!--Col4-->
+          <h2
+            class="font-(family-name:--secondary-font-family) font-medium text-[1.3em] text-(--secondary-color) mb-5"
+          >
+            Newsletter
+          </h2>
+          <p>Subscribe to our newsletter for the latest updates and offers.</p>
+          <div class="flex">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full px-3 py-3 text-xs text-black outline-none bg-white"
+            />
+
+            <button class="bg-gold px-4 bg-(--secondary-color) text-white">
+              →
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
